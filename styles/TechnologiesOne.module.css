@@ -1,0 +1,96 @@
+.firstImgLogo {
+    width: 1084px;
+    height: 370px;
+   display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 250px;
+    background: linear-gradient(134.35deg, rgba(0, 146, 255, 0.05) -46.81%, rgba(0, 128, 223, 0.1) 39.75%), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
+}
+.firstImgLogoText {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #125E97;
+}
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #125E97;
+    padding-left: 22%;
+    padding-bottom: 90px;
+}
+.bigNumber {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: rgba(0, 146, 255, 0.1);
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 270px;
+}
+.smallCardBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 1084px;
+}
+.smallCard {
+    width: 348px;
+    height: 386px;
+    background: rgba(0, 137, 239, 0.05);
+    margin-right: 20px;
+}
+.smallCardText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    color: rgba(0, 0, 0, 0.8);
+    padding-top: 34px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+.smallCardTitleText {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: white;
+    position: absolute;
+    width: 348px;
+    height: 118px;
+    padding-left: 34px;
+}
+
+.mainInfoBlock {
+    width: 1084px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 572px;
+    padding-bottom: 250px;
+    padding-top: 140px;
+}
+.textMainInfoBlock {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    color: rgba(0, 0, 0, 0.8);
+    padding-right: 112px;
+    padding-bottom: 40px;
+}

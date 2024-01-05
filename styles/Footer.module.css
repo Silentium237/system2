@@ -1,0 +1,60 @@
+.mainFooterStyle {
+    width: 100%;
+    height: 425px;
+    left: 0px;
+    display: flex;
+    position: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.phoneInfo {
+    padding-top: 160px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+   text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+.phoneInfoNumber {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+.linkText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    color: #FFFFFF;
+}
+.imgStyle {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.spanBlock {
+    padding-right: 132px;
+}
+.direction{
+    padding-top: 60px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+.linkEmail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0089EF;
+}

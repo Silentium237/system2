@@ -1,0 +1,217 @@
+.divMain {
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+    top: 438px;
+    /*float: left;*/
+    padding-left: calc(18px + (500 - 18) * (100vw - 800px) / (1800 - 500));
+}
+
+/*.mainText1 {*/
+/*    !*position: absolute;*!*/
+/*    !*width: 624px;*!*/
+/*    !*height: 168px;*!*/
+/*    !*left: 26.56%;*!*/
+/*    !*right: 43.28%;*!*/
+/*    !*top: 257px;*!*/
+/*    font-style: normal;*/
+/*    font-weight: 700;*/
+/*    font-size: 65px;*/
+/*    line-height: 130%;*/
+/*    text-transform: uppercase;*/
+/*    color: #FFFFFF;*/
+/*}*/
+.mainText1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 95px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.mainText2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 130%;
+    color: #125E97
+}
+.subMainText {
+    /*position: absolute;*/
+    /*left: 26.56%;*/
+    /*right: 43.28%;*/
+    /*top: 460px;*/
+    /*bottom: 96.45%;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 155%;
+    color: #FFFFFF;
+}
+.buttonConsult {
+    position: absolute;
+    width: 355px;
+    height: 70px;
+    left: 26.56%;
+    right: 43.28%;
+    top: 551px;
+    background: #125E97;
+    border: 0px;
+}
+.buttonConsult:hover {
+    background-color: #0089EF;
+}
+
+.buttonText {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.numberActive {
+    position: absolute;
+    width: 68px;
+    height: 24px;
+    left: 22%;
+
+    top: 850px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: white;
+    /*color: #125E97;*/
+}
+.numberNotActive {
+    position: absolute;
+    width: 68px;
+    height: 24px;
+    left: 24%;
+    right: 43.28%;
+    top: 850px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.buttonLeft {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    right: 26%;
+    top: 840px;
+    border: 0px;
+}
+
+.buttonLeft:hover {
+    background-color: #006DBF;
+}
+
+.buttonRight {
+    border: 0px;
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    right: 21%;
+    top: 840px;
+}
+
+.buttonRight:hover {
+    background-color: #006DBF;
+}
+
+.divForForm {
+    position: absolute;
+    width: calc(768px + (1036 - 768) * (100vw - 768px) / (1800 - 768));
+    height: 215px;
+    margin-left: calc(18px + (500 - 18) * (100vw - 800px) / (1800 - 500));
+    top: 980px;
+    background: #FFFFFF;
+    box-shadow: 0px -20px 50px rgba(178, 179, 179, 0.1), 0px 20px 50px rgba(178, 179, 179, 0.1);
+}
+
+.inputButton {
+    width: 300px;
+    height: 56px;
+
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    border: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #0089EF;
+}
+.inputHeaderText {
+    padding-top: 60px;
+    padding-left: 58px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: #000000;
+}
+.textWhoWeAreMain {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+    /*text-decoration: underline;*/
+    text-transform: uppercase;
+    color: #125E97;
+}
+.subTextWhoWeAreMain {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    color: rgba(0, 0, 0, 0.8);
+}
+.imgStyle {
+    position: absolute;
+    width: 440px;
+    height: 508px;
+    left: 20%;
+    top: 1350px;
+    z-index: 1;
+    background: linear-gradient(134.35deg, rgba(0, 146, 255, 0.5) -46.81%, #0080DF 39.75%);
+    opacity: 0.1;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.textSellwin {
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #125E97;
+    padding-bottom: 200px;
+}
+.textSellwinDescription {
+    align-items: center;
+    margin: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
+    color: rgba(0, 0, 0, 0.9);
+    padding-right: 160px;
+    padding-bottom: 105px;
+}
