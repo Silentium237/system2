@@ -8,7 +8,7 @@ import MainImgForAnotherPage from "../components/MainImgForAnotherPage";
 import Cooperation from "../components/Cooperation";
 import {useState} from "react";
 
-export default function projectB2B (){
+export default function projectB2B ({cardText, tekhnologii, modeliSotrudnichestva,services}){
     const [show , setShow] =useState(false)
     const ChangeShowText = () => {
         setShow(!show)
@@ -73,7 +73,7 @@ export default function projectB2B (){
 
 
     return(
-        <MainContainer>
+        <MainContainer services={services} tekhnologii={tekhnologii}>
             <MainImgForAnotherPage/>
             <div style={{width: 1084,  alignItems: "center", justifyContent: "center", margin: "auto", }}>
 
@@ -252,7 +252,7 @@ export default function projectB2B (){
 
 
 
-            <Cooperation/>
+            <Cooperation modeliSotrudnichestva={modeliSotrudnichestva}/>
 
 
             <Partners/>
@@ -261,4 +261,31 @@ export default function projectB2B (){
         </MainContainer>
 
     )
+}
+
+export const getServerSideProps = async () =>{
+    console.log("11111111111")
+
+
+    // Call an external API endpoint to get posts.
+    // You can use any data fetching library
+    const res = await fetch('https://portal.sellwingroup.com/api/sellwin-system/?SECTION=uslugi')
+    const cardText = await res.json()
+    const res2 = await fetch('https://portal.sellwingroup.com/api/sellwin-system/?SECTION=tekhnologii')
+    const tekhnologii = await res2.json()
+    const res3 = await fetch('https://portal.sellwingroup.com/api/sellwin-system/?SECTION=modeli-sotrudnichestva')
+    const modeliSotrudnichestva = await res3.json()
+    const response = await fetch(`https://portal.sellwingroup.com/api/sellwin-system/?SECTION=uslugi`)
+    const services = await response.json()
+
+    // By returning { props: { posts } }, the Blog component
+    // will receive `posts` as a prop at build time
+    return {
+        props: {
+            cardText,
+            tekhnologii,
+            modeliSotrudnichestva,
+            services
+        },
+    }
 }

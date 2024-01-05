@@ -8,7 +8,7 @@ import MainImgForAnotherPage from "../components/MainImgForAnotherPage";
 import Cooperation from "../components/Cooperation";
 import styleTechnoOne from "../styles/TechnologiesOne.module.css"
 
-export default function technologiesOne (){
+export default function technologiesOne ({cardText, tekhnologii, modeliSotrudnichestva,services}){
 
     let array = [
         {text: "   Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
@@ -37,7 +37,7 @@ export default function technologiesOne (){
 
 
     return(
-        <MainContainer>
+        <MainContainer services={services} tekhnologii={tekhnologii}>
             <MainImgForAnotherPage/>
             <div style={{width: 1084,  alignItems: "center", justifyContent: "center", margin: "auto"}}>
                 <div className={style.breadCrams}>
@@ -95,11 +95,38 @@ export default function technologiesOne (){
                 </span>
             </div>
 
-            <Cooperation/>
+            <Cooperation modeliSotrudnichestva={modeliSotrudnichestva}/>
             <Partners/>
             <WriteMe/>
 
         </MainContainer>
 
     )
+}
+
+export const getServerSideProps = async () =>{
+    console.log("11111111111")
+
+
+    // Call an external API endpoint to get posts.
+    // You can use any data fetching library
+    const res = await fetch('https://portal.sellwingroup.com/api/sellwin-system/?SECTION=uslugi')
+    const cardText = await res.json()
+    const res2 = await fetch('https://portal.sellwingroup.com/api/sellwin-system/?SECTION=tekhnologii')
+    const tekhnologii = await res2.json()
+    const res3 = await fetch('https://portal.sellwingroup.com/api/sellwin-system/?SECTION=modeli-sotrudnichestva')
+    const modeliSotrudnichestva = await res3.json()
+    const response = await fetch(`https://portal.sellwingroup.com/api/sellwin-system/?SECTION=uslugi`)
+    const services = await response.json()
+
+    // By returning { props: { posts } }, the Blog component
+    // will receive `posts` as a prop at build time
+    return {
+        props: {
+            cardText,
+            tekhnologii,
+            modeliSotrudnichestva,
+            services
+        },
+    }
 }
