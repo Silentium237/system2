@@ -25,8 +25,8 @@ const MainContainer = ({children, keywords, services, tekhnologii}) => {
             </Head>
             <div className="navbar">
 
-                <div style={{width: 1084, alignItems: "center", display: "flex", justifyContent: "space-around"}}>
-                       <span style={{float: "left", paddingRight: 50}}>
+                <div style={{width: "calc( (100vw - 768px)/(1900 - 768) * (1084 - 768) + 768px)", alignItems: "center", display: "flex", justifyContent: "space-around"}}>
+                       <span style={{float: "left", paddingRight: "1%"}}>
                            <Link href={'/'}>
                                 <Image
                                     src="/logo_white.svg"
@@ -35,39 +35,33 @@ const MainContainer = ({children, keywords, services, tekhnologii}) => {
                                     alt="Go Home"
                                 />
                            </Link>
-
-                </span>
-
-                    {/*<A href={'/'} text="О Компании "/>*/}
-                    {/*<span>*/}
-                    {/*/*/}
-                    {/*</span>*/}
-                <div style={{width: 700, paddingRight: 10}}>
-                <span style={{marginRight: 10}}>
+                        </span>
+                <div>
+                <span >
                    <div className="dropdown">
                        <div style={{height: 70, marginTop: 50, zIndex: 2}} onMouseEnter={() => setShowMenu(true)}
                             onMouseLeave={() => setShowMenu(false)}>
                          <A href={'/techno'} text="Технологии"/>
-                           <img src="../down.svg"/> <span style={{color:"white", marginRight: 10, marginLeft: 10 , opacity:0.35}}>/</span>
+                           <img src="../down.svg"/> <span style={{color:"white", opacity:0.35}}>/</span>
                        </div>
                     </div>
 
                 </span>
 
 
-                <span style={{marginRight: 10}}>
+                <span >
                    <div className="dropdown">
                        <div style={{height: 70, marginTop: 50, zIndex: 2}} onMouseEnter={() => setShowMenuService(true)}
                             onMouseLeave={() => setShowMenuService(false)}>
                           <A href={'/service'} text="Услуги"/>
-                            <img src="../down.svg"/> <span style={{color:"white",marginLeft: 10, marginRight: 10, opacity:0.35}}>/</span>
+                            <img src="../down.svg"/> <span style={{color:"white", opacity:0.35}}>/</span>
                        </div>
                     </div>
                 </span>
 
                 <span >
                           <A href={'/price'} text="Цены"/>
-                    <span style={{color:"white", marginRight: 10, marginLeft: 10 , opacity:0.35}}>
+                    <span style={{color:"white", opacity:0.35}}>
                     /
                     </span>
                 </span>
@@ -78,7 +72,7 @@ const MainContainer = ({children, keywords, services, tekhnologii}) => {
                        <div style={{height: 70, marginTop: 50, zIndex: 2}} onMouseEnter={() => setShowMenuProject(true)}
                             onMouseLeave={() => setShowMenuProject(false)}>
                           <A href={'/project'} text="Проекты и решения"/>
-                           <img src="../down.svg"/> <span style={{color:"white",  marginRight: 10, marginLeft: 10 , opacity:0.35}}>/</span>
+                           <img src="../down.svg"/> <span style={{color:"white", opacity:0.35}}>/</span>
                        </div>
                     </div>
                 </span>
@@ -86,12 +80,10 @@ const MainContainer = ({children, keywords, services, tekhnologii}) => {
                     <A href={'/contact'} text="Контакты"/>
                 </div>
 
-                    <span style={{float: "right"}}>
+                    <span style={{float: "right" , fontSize: "calc( (100vw - 480px)/(1900 - 480) * (14 - 10) + 10px)", width: 170}}>
                         <span>
-                            <img src="../phone.svg"/>
-                        </span>
-                        <span >
-                            <A href={'/contact'} text="+375(29) 000 00 00"/>
+                            <img src="../phone.svg" width={12}/>
+                             <A href={'/contact'} text="+375(29) 000 00 00"/>
                         </span>
                     </span>
 

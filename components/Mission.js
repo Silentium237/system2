@@ -8,9 +8,9 @@ export default function Mission() {
 
     return (
         <>
-            <div style={{display: "flex", paddingTop: 180}}>
+            <div style={{display: "flex", paddingTop: "calc( (100vw - 768px)/(1900 - 768) * (180 - 60) + 60px)"}}>
                 <img  width="100%" src="../Group81.svg"/>
-                <div style={{position: "absolute", paddingTop: "10%", left: "56%"}}>
+                <div style={{position: "absolute", paddingTop: "calc( (100vw - 768px)/(1900 - 768) * (170 - 50) + 50px)", left: "calc( (100vw - 768px)/(1900 - 768) * (1050 - 400) + 400px)"}}>
                     <div className={style.title}>
                         Миссия
                     </div>

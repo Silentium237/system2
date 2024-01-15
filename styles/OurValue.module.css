@@ -4,23 +4,23 @@
     flex-wrap: wrap;
     margin: auto;
     padding-top: 100px;
-    width: 1084px;
+    width: calc( (100vw - 768px)/(1900 - 768) * (1084 - 728) + 728px);
     align-items: start;
 }
 .ourValue {
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: calc( (100vw - 768px)/(1900 - 768) * (35 - 28) + 28px);
     line-height: 150%;
     text-transform: uppercase;
     color: #125E97;
-    padding-left: 420px;
-    padding-top: 245px;
+    padding-left: calc( (100vw - 768px)/(1900 - 768) * (420 - 10) + 10px);
+    padding-top: calc( (100vw - 768px)/(1900 - 768) * (245 - 125) + 125px);
 }
 
 .cardStyle {
-    width: 340px;
-    height: 260px;
+    width: calc( (100vw - 768px)/(1900 - 768) * (340 - 225) + 225px);
+    height: calc( (100vw - 768px)/(1900 - 768) * (260 - 175) + 175px);
     background: rgba(0, 137, 239, 0.05);
     margin: auto;
     margin-bottom: 75px;
@@ -30,10 +30,10 @@
 .title {
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: calc( (100vw - 768px)/(1900 - 768) * (20 - 16) + 16px);
     line-height: 140%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: calc( (100vw - 768px)/(1900 - 768) * (25 - 10) + 10px);
+    padding-bottom: calc( (100vw - 768px)/(1900 - 768) * (25 - 10) + 10px);
     margin-left: 20px;
     color: rgba(0, 0, 0, 0.8);
 
@@ -41,7 +41,7 @@
 .subTitle {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: calc( (100vw - 768px)/(1900 - 768) * (16 - 12) + 12px);
     line-height: 155%;
     margin-left: 20px;
     color: rgba(0, 0, 0, 0.8);

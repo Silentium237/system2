@@ -44,44 +44,26 @@ export default function MainImg() {
         <>
             <div style={{
                 backgroundImage: mainImg,
-                height: 1080, backgroundRepeat: "no-repeat center center fixed",
+                height: "calc( (100vw - 480px)/(1900 - 480) * (1084 - 600) + 600px)", backgroundRepeat: "no-repeat center center fixed",
                 width: "100%", margin: "auto", backgroundSize: "cover", transition: "1s ease-out 0.5s", display: "flex"
             }}>
-                {/*<div style={{backgroundImage: "Url(/1773.svg)", paddingTop: 122, width: "100%"}}>*/}
-                {/*    <img src="../1741.svg" style={{transform: rotate, transition: "1s ease-out 0.5s"}}/>*/}
-                {/*</div>*/}
-
-
-                {/*<div className={style.divMain}>*/}
-                {/*    <p className={style.mainText1}>С НАМИ </p>*/}
-                {/*    <p className={style.mainText2} style={{color: colorText, transition: "1s ease-out 0.5s"}}>ВЫИГРЫВАЮТ!</p>*/}
-                {/*    <p className={style.subMainText}>Полный цикд создания, масштабирования и поставки <br/>*/}
-                {/*        защищенного программного обеспечения</p>*/}
-                {/*</div> */}
-
             </div>
             <div className={style.divMain}>
                 <p className={style.mainText1}>С НАМИ </p>
                 <p className={style.mainText1}
                    style={{color: colorText, transition: "1s ease-out 0.5s"}}>ВЫИГРЫВАЮТ!</p>
-                {/*<p className={style.subMainText}>Полный цикд создания, масштабирования и поставки <br/>*/}
-                {/*    защищенного программного обеспечения</p>*/}
             </div>
-
-            {/*<button className={style.buttonConsult}>*/}
-            {/*    <h className={style.buttonText}>получить консультацию</h>*/}
-            {/*</button>*/}
-            <div style={{width: 1024, }}>
-                <div style={{float: "left"}}>
-                          <span className={style.numberActive}>
+            <div style={{width: "calc( (100vw - 768px)/(1900 - 768) * (1084 - 768) + 768px)" }}>
+                <span >
+                        <span className={style.numberActive}>
                             {value}
                         </span>
-                    <span className={style.numberNotActive}>
+                        <span className={style.numberNotActive}>
                              / 3
                         </span>
-                </div>
+                </span>
 
-                <span style={{float: "right"}}>
+                <span >
                             <button className={style.buttonLeft} onClick={() => changeLeft(value)}>  <img
                                 src="../right.svg"/> </button>
                             <button className={style.buttonRight} onClick={() => changeRight(value)}>  <img

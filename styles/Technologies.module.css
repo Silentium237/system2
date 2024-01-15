@@ -2,7 +2,7 @@
 .title {
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: calc( (100vw - 768px)/(1900 - 768) * (35 - 28) + 28px);
     line-height: 150%;
     text-transform: uppercase;
     color: #125E97;
@@ -10,29 +10,27 @@
 .cardText {
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: calc( (100vw - 768px)/(1900 - 768) * (20 - 16) + 16px);
     line-height: 170%;
     color: #FFFFFF;
 }
 .subTitle {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: calc( (100vw - 768px)/(1900 - 768) * (20 - 16) + 16px);
     line-height: 170%;
     color: #000000;
 }
 .textForTechnologies {
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: calc( (100vw - 768px)/(1900 - 768) * (20 - 16) + 16px);
     line-height: 150%;
     text-align: center;
     text-transform: uppercase;
-    background-color: rgba(0, 137, 239, 0.05);;
+    background-color: rgba(0, 137, 239, 0.05);
     color: #0092FF;
-    padding-top: 30px;
-    /*margin-bottom: 10px;*/
-    /*position: relative;*/
+    padding-top: calc( (100vw - 768px)/(1900 - 768) * (30 - 20) + 20px);
     justify-content: space-around;
     align-items: flex-start;
 }

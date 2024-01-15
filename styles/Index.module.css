@@ -6,29 +6,14 @@
     display: inline-block;
     margin: auto;
     text-align: left;
-    top: 438px;
-    /*float: left;*/
-    padding-left: calc(18px + (500 - 18) * (100vw - 800px) / (1800 - 500));
+    top: calc( (100vw - 480px)/(1900 - 480) * (438 - 200) + 200px);
+    padding-left: calc( (100vw - 480px)/(1900 - 480) * (420 - 0) + 0px);
 }
 
-/*.mainText1 {*/
-/*    !*position: absolute;*!*/
-/*    !*width: 624px;*!*/
-/*    !*height: 168px;*!*/
-/*    !*left: 26.56%;*!*/
-/*    !*right: 43.28%;*!*/
-/*    !*top: 257px;*!*/
-/*    font-style: normal;*/
-/*    font-weight: 700;*/
-/*    font-size: 65px;*/
-/*    line-height: 130%;*/
-/*    text-transform: uppercase;*/
-/*    color: #FFFFFF;*/
-/*}*/
 .mainText1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
+    font-size: calc( (100vw - 480px)/(1900 - 480) * (70 - 35) + 35px);
     line-height: 95px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -41,11 +26,6 @@
     color: #125E97
 }
 .subMainText {
-    /*position: absolute;*/
-    /*left: 26.56%;*/
-    /*right: 43.28%;*/
-    /*top: 460px;*/
-    /*bottom: 96.45%;*/
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -77,11 +57,8 @@
 }
 .numberActive {
     position: absolute;
-    width: 68px;
-    height: 24px;
-    left: 22%;
-
-    top: 850px;
+    left: calc( (100vw - 480px)/(1900 - 480) * (420 - 0) + 0px);
+    top: calc( (100vw - 480px)/(1900 - 480) * (850 - 400) + 400px);
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
@@ -92,11 +69,8 @@
 }
 .numberNotActive {
     position: absolute;
-    width: 68px;
-    height: 24px;
-    left: 24%;
-    right: 43.28%;
-    top: 850px;
+    margin-left: calc( (100vw - 480px)/(1900 - 480) * (455 - 20) + 20px);
+    top: calc( (100vw - 480px)/(1900 - 480) * (850 - 400) + 400px);
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
@@ -109,8 +83,8 @@
     position: absolute;
     width: 72px;
     height: 72px;
-    right: 26%;
-    top: 840px;
+    margin-left: calc( (100vw - 480px)/(1900 - 480) * (1300 - 350) + 350px);
+    top: calc( (100vw - 480px)/(1900 - 480) * (850 - 400) + 400px);
     border: 0px;
 }
 
@@ -123,8 +97,8 @@
     position: absolute;
     width: 72px;
     height: 72px;
-    right: 21%;
-    top: 840px;
+    margin-left: calc( (100vw - 480px)/(1900 - 480) * (1400 - 450) + 450px);
+    top: calc( (100vw - 480px)/(1900 - 480) * (850 - 400) + 400px);
 }
 
 .buttonRight:hover {
@@ -133,17 +107,17 @@
 
 .divForForm {
     position: absolute;
-    width: calc(768px + (1036 - 768) * (100vw - 768px) / (1800 - 768));
-    height: 215px;
-    margin-left: calc(18px + (500 - 18) * (100vw - 800px) / (1800 - 500));
-    top: 980px;
+    width: calc( (100vw - 480px)/(1900 - 480) * (1040 - 520) + 520px);
+    height: calc( (100vw - 480px)/(1900 - 480) * (215 - 150) + 150px);
+    left: calc( (100vw - 480px)/(1900 - 480) * (435));
+    top:  calc( (100vw - 480px)/(1900 - 480) * (980 - 520) + 520px);
     background: #FFFFFF;
     box-shadow: 0px -20px 50px rgba(178, 179, 179, 0.1), 0px 20px 50px rgba(178, 179, 179, 0.1);
 }
 
 .inputButton {
-    width: 300px;
-    height: 56px;
+    width: calc( (100vw - 480px)/(1900 - 480) * (300 - 200) + 200px);
+    height: calc( (100vw - 480px)/(1900 - 480) * (56 - 30) + 30px);
 
     margin-left: 40px;
     font-style: normal;
@@ -161,14 +135,14 @@
     padding-left: 58px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: calc( (100vw - 480px)/(1900 - 480) * (16 - 14) + 14px);
     line-height: 135%;
     color: #000000;
 }
 .textWhoWeAreMain {
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: calc( (100vw - 480px)/(1900 - 480) * (35 - 28) + 28px);
     line-height: 150%;
     /*text-decoration: underline;*/
     text-transform: uppercase;
@@ -177,16 +151,16 @@
 .subTextWhoWeAreMain {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: calc( (100vw - 480px)/(1900 - 480) * (16 - 12) + 12px);
     line-height: 155%;
     color: rgba(0, 0, 0, 0.8);
 }
 .imgStyle {
     position: absolute;
-    width: 440px;
-    height: 508px;
-    left: 20%;
-    top: 1350px;
+    width: calc( (100vw - 768px)/(1900 - 768) * (440 - 300) + 300px);
+    height: calc( (100vw - 768px)/(1900 - 768) * (508 - 350) + 350px);
+    margin-left: calc( (100vw - 480px)/(1900 - 480) * (40 - 20) + 20px);
+    top: calc( (100vw - 768px)/(1900 - 768) * (1350 - 850) + 850px);
     z-index: 1;
     background: linear-gradient(134.35deg, rgba(0, 146, 255, 0.5) -46.81%, #0080DF 39.75%);
     opacity: 0.1;
@@ -198,20 +172,22 @@
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: calc( (100vw - 480px)/(1900 - 480) * (35 - 28) + 28px);
     line-height: 150%;
     text-transform: uppercase;
     color: #125E97;
-    padding-bottom: 200px;
+    padding-bottom: calc( (100vw - 480px)/(1900 - 480) * (200 - 70) + 70px);
 }
 .textSellwinDescription {
     align-items: center;
     margin: auto;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: calc( (100vw - 480px)/(1900 - 480) * (20 - 14) + 14px);
     line-height: 170%;
     color: rgba(0, 0, 0, 0.9);
-    padding-right: 160px;
-    padding-bottom: 105px;
+    padding-right: calc( (100vw - 480px)/(1900 - 480) * (160 - 0) + 0px);
+    padding-bottom: calc( (100vw - 480px)/(1900 - 480) * (105 - 40) + 40px);
+    padding-left: 10px;
+    width: 40%;
 }

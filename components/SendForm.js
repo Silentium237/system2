@@ -7,50 +7,15 @@ import {useState} from "react";
 
 export default function SendForm() {
 
-    const [inputWidth , setInputWidth] = useState("20ch")
+    const [inputWidth , setInputWidth] = useState("28%")
 
 
     return (
         <>
-
-            {/*<div className={style.divForForm}>*/}
-            {/*    <form  >*/}
-            {/*        <div className={style.inputHeaderText}>*/}
-            {/*            Заполните форму для получения обратной связи*/}
-            {/*        </div>*/}
-
-
-            {/*        <div style={{display: "inline-flex", paddingLeft: 60}}>*/}
-            {/*            <span className={style2.form__group}>*/}
-            {/*            <input type="input" className={style2.form__field} placeholder="Name" name="name" id='name' required/>*/}
-            {/*            <label htmlFor="name" className={style2.form__label}>Имя*</label>*/}
-            {/*        </span>*/}
-            {/*            <span className={style2.form__group}>*/}
-            {/*            <input type="input" className={style2.form__field} placeholder="Name" name="name" id='name' required/>*/}
-            {/*            <label htmlFor="name" className={style2.form__label}>Email*</label>*/}
-            {/*        </span>*/}
-            {/*            <span className={style2.form__group}>*/}
-            {/*            <input type="input" className={style2.form__field} placeholder="Name" name="name" id='name' required/>*/}
-            {/*            <label htmlFor="name" className={style2.form__label}>Телефон*</label>*/}
-            {/*        </span>*/}
-
-            {/*        </div>*/}
-            {/*        <button className={style.inputButton}>*/}
-            {/*            отправить*/}
-            {/*        </button>*/}
-
-            {/*    </form>*/}
-
-            {/*</div>*/}
-
-
             <div className={style.divForForm}>
-
                     <div className={style.inputHeaderText}>
                         Заполните форму для получения обратной связи
                     </div>
-
-
                     <div style={{display: "inline-flex", paddingLeft: 60, paddingRight: 50}}>
                         <Box
                             component="form"
@@ -60,25 +25,30 @@ export default function SendForm() {
                             noValidate
                             autoComplete="off"
                         >
-                        <TextField
-                            id="standard-textarea"
-                            label="Имя*"
-                            placeholder="Ваше имя"
-                            multiline
-                            variant="standard"
-                        />   <TextField
-                        id="standard-textarea"
-                        label="Email*"
-                        placeholder="Ваш email"
-                        multiline
-                        variant="standard"
-                    />
-                        <TextField
-                            id="standard-textarea"
-                            label="Телефон*"
-                            placeholder="Ваш телефон"
-                            multiline
-                            variant="standard"
+                            <TextField
+                                style={{fontSize: "calc( (100vw - 480px)/(1900 - 480) * (16 - 12) + 12px)"}}
+                                id="standard-textarea"
+                                label="Имя*"
+                                placeholder="Имя"
+                                multiline
+                                variant="standard"
+                                size="small"
+                            />
+                            <TextField
+                                id="standard-textarea"
+                                label="Email*"
+                                placeholder="Email"
+                                multiline
+                                variant="standard"
+                                size="small"
+                             />
+                            <TextField
+                                id="standard-textarea"
+                                label="Телефон*"
+                                placeholder="Телефон"
+                                multiline
+                                variant="standard"
+                                size="small"
                         />
                             </Box>
                         <button className={style.inputButton}>

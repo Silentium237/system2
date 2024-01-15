@@ -1,16 +1,16 @@
 .title {
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: calc( (100vw - 768px)/(1900 - 768) * (35 - 28) + 28px);
     line-height: 150%;
     text-transform: uppercase;
     color: #125E97;
-    padding-bottom: 30px;
+    padding-bottom: calc( (100vw - 768px)/(1900 - 768) * (30 - 15) + 15px);
 }
 .subTitle {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: calc( (100vw - 768px)/(1900 - 768) * (20 - 14) + 14px);
     line-height: 170%;
     color: rgba(0, 0, 0, 0.8);
 }

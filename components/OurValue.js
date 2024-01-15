@@ -46,7 +46,7 @@ const OurValue = ({}) => {
                 {cardText.map((item,index) => (
                     <div key={index} style={index === 5 ? {opacity: 0} : null} className={styleOurValue.cardStyle}>
                         <img style={{marginTop: -30, marginLeft: 33}} src={item.url}/>
-                        <div style={{width: 300, marginLeft:12, }}>
+                        <div style={{width: "calc( (100vw - 768px)/(1900 - 768) * (300 - 200) + 200px)", marginLeft:12, }}>
                             <div className={styleOurValue.title}>
                                 {item.title}
                             </div>
