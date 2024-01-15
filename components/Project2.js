@@ -1,5 +1,8 @@
 import styles from '../styles/Cooperation.module.css'
 import {useState} from "react";
+import {ImageListItem, ImageListItemBar} from "@mui/material";
+import IconButton from '@mui/material/IconButton';
+import InfoIcon from '@mui/icons-material/Info';
 // import style from "../styles/Index.module.css";
 
 
@@ -76,47 +79,69 @@ export default function Project2() {
                     <>
                         {index === showCardItem ?
 
-                            <div style={{display: "flex", alignItems: "center", margin: "auto", justifyContent: "space-between", width: 1090, paddingTop: 50}}>
-                                <div>
-                                    <img style={{padding: 20}} height="540px" width="746px" src="../bh2.jpg"/>
-                                <div style={{position: "absolute", marginTop: -105, marginLeft:20, width: 705, height: 82, backgroundColor: "#7ddbff", opacity: 0.80}}>
+                            <div style={{display: "flex",
+                                alignItems: "center",
+                                margin: "auto",
+                                width: "calc( (100vw - 768px)/(1900 - 768) * (1078 - 768) + 768px)",
+                                paddingTop: 50,
 
-                                </div>
-                                    <div  className={styles.textButtonStyle} style={{position: "absolute",marginTop: -75, marginLeft:50, }}>
-                                    ПОДРОБНЕЕ
-                                        <img style={{position: "absolute", left: 150}} src="../ArrowNext.svg"/>
-                                        <img style={{position: "absolute",marginTop: -10, left: 600}} src="../ArrowSquareOut.svg"/>
+                                // padding: "calc( (100vw - 768px)/(1900 - 768) * (20 - 10) + 10px)",
+                            }}>
 
-                                </div>
+                                <ImageListItem >
+                                    <img
+                                        style={{
+                                            width: "calc( (100vw - 768px)/(1900 - 768) * (720 - 490) + 490px)",
+                                            height: "calc( (100vw - 768px)/(1900 - 768) * (510 - 360) + 360px)",
+                                        }}
+                                        src="../bh2.jpg"
+                                        alt="../bh2.jpg"
+                                        loading="lazy"
+                                    />
 
+                                    <ImageListItemBar
+                                        className={styles.textButtonStyle}
+                                        onClick={()=> alert("3333")}
+                                        title="ПОДРОБНЕЕ"
+                                        actionIcon={
+                                            <>
+                                                <IconButton
+                                                    sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                                                    aria-label={`info about ${item.title}`}
+                                                >
+                                                    <img style={{
+                                                        float: "left",
+                                                        marginRight: "calc( (100vw - 768px)/(1900 - 768) * (450 - 270) + 270px)",
+                                                    }} src="../ArrowNext.svg"/>
+                                                    <img style={{
+                                                    }} src="../ArrowSquareOut.svg"/>
+                                                </IconButton>
+                                            </>
 
-
-
-                                {/*<span style={{background: "rgba(0, 128, 223, 0.05)", height: 555, width: 624 }}>*/}
-                                {/*    <p style={{paddingTop:38, paddingLeft: 92}} >*/}
-                                {/*            <button style={{width: 532}} className={styles.buttonStyle}>*/}
-                                {/*    <span style={{paddingRight:350}} className={styles.textButtonStyle}>*/}
-                                {/*    подробнее*/}
-                                {/*        <img style={{position: "absolute", top: 25, left: 150}} src="../ArrowNext.svg"/>*/}
-                                {/*        <img style={{position: "absolute", top: 15, left: 450}} src="../ArrowSquareOut.svg"/>*/}
-
-                                {/*</span>*/}
-                                {/*</button>*/}
-                                {/*    </p>*/}
-
-                                {/*</span>*/}
-
-
-
-
-
-                                </div>
+                                        }
+                                    />
+                                </ImageListItem>
                                 <div>
                                     <div>
-                                        <img style={{padding: 20}} height="270px" width="370px" src="../bh1.jpg"/>
+                                        <img style={{
+                                            padding: "calc( (100vw - 768px)/(1900 - 768) * (20 - 10) + 10px)",
+                                            paddingBottom: 0,
+                                            paddingRight: 0,
+                                            width: "calc( (100vw - 768px)/(1900 - 768) * (380 - 240) + 240px)",
+                                            height: "calc( (100vw - 768px)/(1900 - 768) * (270 - 180) + 180px)",
+                                        }}
+
+
+                                             src="../bh1.jpg"/>
                                     </div>
                                     <div>
-                                        <img style={{padding: 20}} height="270px" width="370px" src="../bh3.jpg"/>
+                                        <img style={{
+                                            paddingRight: 0,
+                                            padding: "calc( (100vw - 768px)/(1900 - 768) * (20 - 10) + 10px)",
+                                            width: "calc( (100vw - 768px)/(1900 - 768) * (380 - 240) + 240px)",
+                                            height: "calc( (100vw - 768px)/(1900 - 768) * (270 - 180) + 180px)",
+                                        }}
+                                             src="../bh3.jpg"/>
                                     </div>
                                 </div>
 

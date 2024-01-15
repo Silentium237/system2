@@ -3,11 +3,11 @@ import style from "../styles/Technologies.module.css"
 export default function Technologies({tekhnologii}) {
 
     let styleSmall ={
-        width: "calc( (100vw - 768px)/(1900 - 768) * (164 - 105) + 105px)",
+        width: "calc( (100vw - 768px)/(1900 - 768) * (164 - 115) + 115px)",
         height: "calc( (100vw - 768px)/(1900 - 768) * (94 - 58) + 58px)"
     }
     let styleBig ={
-        width: "calc( (100vw - 768px)/(1900 - 768) * (256 - 150) + 150px)",
+        width: "calc( (100vw - 768px)/(1900 - 768) * (256 - 170) + 170px)",
         height: "calc( (100vw - 768px)/(1900 - 768) * (94 - 58) + 58px)"
     }
 
@@ -18,9 +18,7 @@ export default function Technologies({tekhnologii}) {
             <div style={{display: "flex", alignItems: "center",
                 justifyContent: "center",
                 margin: "auto",
-                width: "calc( (100vw - 768px)/(1900 - 768) * (1300 - 600) + 600px)",
-                paddingTop: "calc( (100vw - 768px)/(1900 - 768) * (250 - 100) + 100px)"
-            }}>
+                width: "calc( (100vw - 768px)/(1900 - 768) * (1300 - 600) + 600px)", paddingTop: 250}}>
                 <span >
 
 
@@ -32,15 +30,14 @@ export default function Technologies({tekhnologii}) {
                     backgroundImage: "Url(/technologies.svg)",
                     backgroundRepeat: "no-repeat",
                     height: "calc( (100vw - 768px)/(1900 - 768) * (700 - 400) + 400px)",
-                    width:"calc( (100vw - 768px)/(1900 - 768) * (600 - 350) + 350px)",
-                    marginRight: 10
+                    width:"calc( (100vw - 768px)/(1900 - 768) * (600 - 400) + 400px)"
                 }}>
 
                     <div style={{
                         display: "flex",
-                        width:"calc( (100vw - 768px)/(1900 - 768) * (400 - 300) + 300px)",
-                        padding: "calc( (100vw - 768px)/(1900 - 768) * (60 - 30) + 30px)",
-                        marginLeft: "calc( (100vw - 768px)/(1900 - 768) * (30 - 20) + 20px)",
+                        width:"calc( (100vw - 768px)/(1900 - 768) * (400 - 270) + 270px)",
+                        padding: "calc( (100vw - 768px)/(1900 - 768) * (60 - 40) + 40px)",
+                        marginLeft: 30,
                         paddingTop: "calc( (100vw - 768px)/(1900 - 768) * (150 - 100) + 100px)",
                     }} className={style.cardText}>
                         Sellwin System предоставляет услуги по разработке,
@@ -50,13 +47,13 @@ export default function Technologies({tekhnologii}) {
                         на рынке Республики Беларусь.
                     </div>
 
+
                 </div>
 
                 </span>
 
                 <span >
                        <div style={{
-                           marginTop: "calc( (100vw - 768px)/(1900 - 768) * (1 - 20) + 20px)",
                            display: "flex",
                            width:"calc( (100vw - 768px)/(1900 - 768) * (500 - 300) + 300px)",
                            paddingBottom: "calc( (100vw - 768px)/(1900 - 768) * (70 - 40) + 40px)"
